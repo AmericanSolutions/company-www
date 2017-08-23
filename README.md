@@ -20,6 +20,13 @@ visit the site in your browser.
 ## Developing
 ### Built With
 HTML/SCSS/JS
+
+#### Styles CSS/SASS
+All style sheets are built from the `gulpgile.js` task 'sass' which preprocess sass in the
+`/public/assets/sass` directory and write them to the `css/` directory. Any filenames in the 
+`css/`. When running the dev server locally from `npm start` the Gulp & BrowserSync modules 
+automatically process and reload the browser when `.scss` files are changed.
+
 ### Prerequisites
 Node.js version 4 or higher is required. It is recommended that you install NVM and run the command `nvm use` from the
 project root to apply the project `.nvmrc` to your env.
