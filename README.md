@@ -1,68 +1,44 @@
-# company-www
-American Solutions, llc public website
+![logo](https://user-images.githubusercontent.com/5973579/29640433-d5ad1d1c-8813-11e7-8bba-ce8382eb38cf.jpg)
+> American Solutions, llc public website
 
 > See repo wiki for additional configuration docs and info if what you're looking for is not found here
 
-![Logo of the project](./images/logo.sample.png)
-# Name of the project
-> Additional information or tag line
-A brief description of your project, what it is used for.
 ## Installing / Getting started
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+The minimal setup you need to get dev env up and running. Must have node version 4 or higher installed.
 ```shell
-commands here
+npm start
 ```
-Here you should say what actually happens when you execute the code above.
+> If you run in to issues with starting the project, try wiping your node_modules folder then restarting, ie:
+```shell
+rm -rf node_modules
+npm start
+```
+
+The start script will install all npm deps and fire up a BrowserSync server which will print the local address to
+visit the site in your browser.
+
 ## Developing
 ### Built With
-List main libraries, frameworks used including versions (React, Angular etc...)
+HTML/SCSS/JS
 ### Prerequisites
-What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
+Node.js version 4 or higher is required. It is recommended that you install NVM and run the command `nvm use` from the
+project root to apply the project `.nvmrc` to your env.
+
+[Install NVM](https://github.com/creationix/nvm)
+
 ### Setting up Dev
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+Clone the project
 ```shell
-git clone https://github.com/your/your-project.git
-cd your-project/
-packagemanager install
+git clone https://github.com/AmericanSolutions/company-www.git AmericanSolutions
+cd AmericanSolutions/
+npm install
 ```
-And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
-### Building
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here. for example:
-```shell
-./configure
-make
-make install
-```
-Here again you should state what actually happens when the code above gets
-executed.
+> Be sure to `git pull` to get the latest in the repository or branch you're working on in case another dev is also
+working on tasks/features.
+
 ### Deploying / Publishing
-give instructions on how to build and release a new version
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-```shell
-packagemanager deploy your-project -s server.com -u username -p password
-```
-And again you'd need to tell what the previous code actually does.
-## Versioning
-We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
-## Configuration
-Here you should write what are all of the configurations a user can enter when
-using the project.
-## Tests
-Describe and show how to run the tests with code examples.
-Explain what these tests test and why.
-```shell
-Give an example
-```
-## Style guide
-Explain your code style and show how to check it.
-## Api Reference
-If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
-## Database
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc...
-## Licensing
-State what the license is and how to find the text version of the license.
+Deployments are handled server-side via git webhooks on `master` & `develop` branches.
+
+> All pushes to `master` & `develop` are prohibited. You can only get code in those branches via pull request.
+
+More info: (Deployment Wiki Docs)[https://github.com/AmericanSolutions/company-www/wiki/Domain,-Hosting,-Server-Config,-&-Deployment]
