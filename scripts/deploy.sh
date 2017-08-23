@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 # This script is ran on the server to "build & deploy assets" in the dev & prod directories
 
 #dev build & deploy
