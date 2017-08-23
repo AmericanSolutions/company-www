@@ -4,6 +4,8 @@
   "description": "American Solutions, llc public website",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
+    "start": "npm i && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
