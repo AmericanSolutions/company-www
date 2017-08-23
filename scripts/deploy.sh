@@ -4,13 +4,11 @@
 #dev build & deploy
 cd /var/dev/
 rm -rf node_modules
-nvm use
 npm install
 npm run build
 
 # prod build & deploy
 cd /var/www/
 rm -rf node_modules
-nvm use
 npm install
 npm run build
