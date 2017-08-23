@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
-    "deploy": "./scripts/deploy.sh",
+    "deploy": "sudo ./scripts/deploy.sh",
     "start": "npm i && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
