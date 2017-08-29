@@ -19,8 +19,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
+                url: "https://usebasin.com/f/33181c4b51f7.json",
+                method: "POST",
+                dataType: "json",
                 data: {
                     name: name,
                     phone: phone,
