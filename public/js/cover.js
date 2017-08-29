@@ -15,47 +15,49 @@ $(function() {
     $('input, textarea').placeholder();
 });
 
+// TODO: disabled
 // Video
-(function($) {
-    $(document).ready(function() {
-        $(".player").mb_YTPlayer();
-        $(document).ready(function() {
-            if (!device.tablet() && !device.mobile()) {
-                $('.video-controls').addClass(
-                    'video-controls-visible');
-            }
-        });
+// (function($) {
+//     $(document).ready(function() {
+//         $(".player").mb_YTPlayer();
+//         $(document).ready(function() {
+//             if (!device.tablet() && !device.mobile()) {
+//                 $('.video-controls').addClass(
+//                     'video-controls-visible');
+//             }
+//         });
+//
+//         $('#video-play').click(function(event) {
+//             event.preventDefault();
+//             if ($(this).hasClass('ion-ios-play')) {
+//                 $('.player').playYTP();
+//             } else {
+//                 $('.player').pauseYTP();
+//             }
+//             $(this).toggleClass('ion-ios-play ion-ios-pause');
+//             return false;
+//         });
+//
+//         $('#video-volume').click(function(event) {
+//             event.preventDefault();
+//             $('.player').toggleVolume();
+//             $(this).toggleClass('ion-android-volume-mute ion-volume-high');
+//             return false;
+//         });
+//
+//     });
+// })(jQuery);
 
-        $('#video-play').click(function(event) {
-            event.preventDefault();
-            if ($(this).hasClass('ion-ios-play')) {
-                $('.player').playYTP();
-            } else {
-                $('.player').pauseYTP();
-            }
-            $(this).toggleClass('ion-ios-play ion-ios-pause');
-            return false;
-        });
-
-        $('#video-volume').click(function(event) {
-            event.preventDefault();
-            $('.player').toggleVolume();
-            $(this).toggleClass('ion-android-volume-mute ion-volume-high');
-            return false;
-        });
-
-    });
-})(jQuery);
-
+// TODO: disabled
 // Countdown
-$('#clock').countdown('2016/10/31').on('update.countdown', function(event) {
-       var $this = $(this).html(event.strftime(''
-         + '<div><span>%-w</span>week%!w</div>'
-         + '<div><span>%-d</span>day%!d</div>'
-         + '<div><span>%H</span>hr</div>'
-         + '<div><span>%M</span>min</div>'
-         + '<div><span>%S</span>sec</div>'));
-     });
+// $('#clock').countdown('2016/10/31').on('update.countdown', function(event) {
+//        var $this = $(this).html(event.strftime(''
+//          + '<div><span>%-w</span>week%!w</div>'
+//          + '<div><span>%-d</span>day%!d</div>'
+//          + '<div><span>%H</span>hr</div>'
+//          + '<div><span>%M</span>min</div>'
+//          + '<div><span>%S</span>sec</div>'));
+//      });
 
 // Load WOW.js on non-touch devices
 var isPhoneDevice = "ontouchstart" in document.documentElement;
