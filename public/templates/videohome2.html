@@ -11,17 +11,15 @@
 
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
 
     <!-- Custom css and fonts -->
-    <link href='//cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
-    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+    <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,53 +33,52 @@
 <!-- Preloader -->
 <div id="preloader"><div id="status">&nbsp;</div></div>
 
-<!-- Horizontal Navbar -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="col-lg-10 col-lg-offset-1">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#top">
-                    American
-                    <i class="icon ion-ios-star"></i>
-                    Software
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#portfolio">Work / Gallery</a></li>
-                    <li><a class="page-scroll" href="#features">Features</a></li>
-                    <li><a class="page-scroll" href="#testimonials">Testimonials</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
-
 <!-- Header -->
-<section id="top" class="parallax site-wrapper site-wrapper-8" data-speed="4" data-type="background">
+<a id="menu-toggle" href="#" class="toggle pull-right"><i class="icon ion-navicon size-48"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="#top"><i class="icon ion-ios-monitor-outline size-38"></i> COVER</a>
+            <a href="#" id="menu-close" class="pull-right"><i class="icon ion-close size-38"></i></a>
+        </li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#portfolio">Work / Gallery</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<section id="top" class="site-wrapper site-wrapper-half">
+    <!-- Video from YouTube. Have Questions? How To: https://github.com/pupunzi/jquery.mb.YTPlayer/wiki -->
+    <a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/rlYVhDKCbqY', containment:'.site-wrapper', autoPlay:true, loop:true, mute:true, startAt:0, stopAt: 50, quality:'small', opacity:1, showControls: false, showYTLogo:false, vol:25}"></a>
     <div class="overlay"></div>
     <div class="site-wrapper-inner">
-        <div class="cover-container inner2">
-            <div class="cover">
-                <p>
-                    <img src="img/amsol_eagle.png" class="img-responsive center-block">
-                </p>
-
-                <p class="lead hidden" id="morphtext">
-                    Awesome <strong><span>websites, mobile apps, webapps, user interfaces, design, layout, testing, e-commerce</span></strong> in the making.
-                </p>
+        <div class="masthead clearfix wow fadeIn" data-wow-delay=".9s">
+            <div class="inner">
+                <h3 class="masthead-brand"><a href="tel:1234567890"><i class="icon ion-android-call"></i> (123) 456-7890
+                    <small>click to call <i class="icon ion-android-arrow-up wow flash" data-wow-iteration="999" data-wow-duration="2s"></i></small></a></h3>
+                <nav>
+                    <ul class="nav masthead-nav">
+                        <li><a href="/"><i class="icon ion-social-twitter"></i></a></li>
+                        <li><a href="/"><i class="icon ion-social-facebook"></i></a></li>
+                        <li><a href="/"><i class="icon ion-social-linkedin"></i></a></li>
+                        <li><a href="/"><i class="icon ion-android-mail"></i></a></li>
+                    </ul>
+                </nav>
             </div>
+        </div>
+        <div class="cover-container">
+            <div class="cover">
+                <h1 class="wow fadeInDownBig"><i class="icon ion-social-youtube"></i> COVER<span class="thin">Video</span> 2</h1>
+                <h4>Unique multipurpose one page template</h4>
+            </div>
+            <div class="video-controls">
+                <a id="video-play" class="icon ion-ios-pause size-28" href="#"></a>  &nbsp;
+                <a id="video-volume" class="icon ion-android-volume-mute size-28" href="#"></a>
+            </div>
+
         </div>
     </div>
 </section>
@@ -91,7 +88,7 @@
     <div class="container-fluid text-center wow fadeIn">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h2>About<span class="thin">Us</span></h2>
+                <h2>digital<span class="thin">experiences</span></h2>
                 <p class="lead">We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
             </div>
         </div>
@@ -118,532 +115,8 @@
     </div>
 </section>
 
-<!-- call to action parallax 5 -->
-<section id="action-parallax5" class="parallax" data-speed="4" data-type="background">
-    <div class="overlay-dark"></div>
-    <div class="container wow fadeIn" data-wow-duration="4s">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-                <i class="icon icon-heading ion-social-html5 size-96"></i> &nbsp; &nbsp; <i class="icon icon-heading ion-social-css3-outline size-96"></i>
-                <br>
-                <h2>Designer/Coder Friendly</h2>
-                <p class="lead">
-                    The collaborative process of web development requires close integration of <strong>technology and design</strong> - two disciplines that inform one another.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- portfolio -->
-<section id="portfolio" class="head">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center wow fadeIn">
-                <h2 class="heading">Work</h2>
-                <h4>We believe our work speaks for itself. Browse our most recent projects below</h4>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="portfolio wow fadeIn">
-    <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title
-                        </div>
-                    </div>
-                    <img src="img/portfolio/1.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 2
-                        </div>
-                    </div>
-                    <img src="img/portfolio/2.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 3
-                        </div>
-                    </div>
-                    <img src="img/portfolio/3.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 4
-                        </div>
-                    </div>
-                    <img src="img/portfolio/4.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 5
-                        </div>
-                    </div>
-                    <img src="img/portfolio/5.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 6
-                        </div>
-                    </div>
-                    <img src="img/portfolio/6.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 7
-                        </div>
-                    </div>
-                    <img src="img/portfolio/7.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 8
-                        </div>
-                    </div>
-                    <img src="img/portfolio/8.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 9
-                        </div>
-                    </div>
-                    <img src="img/portfolio/9.gif" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 10
-                        </div>
-                    </div>
-                    <img src="img/portfolio/10.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal11" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 11
-                        </div>
-                    </div>
-                    <img src="img/portfolio/11.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
-                <a data-target="#portfolioModal12" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Project Title 12
-                        </div>
-                    </div>
-                    <img src="img/portfolio/12.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modals -->
-<div class="work">
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Magic Bicycle - Artweek Boston 2015</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/1.jpg" class="img-responsive img-centered" alt="">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/64254212" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Laaamp - Berlin Biennale</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/2.jpg" class="img-responsive img-centered" alt="">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/33967829" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Smart bottle - NYC magazine</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/3.jpg" class="img-responsive img-centered" alt="">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/78937043" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Big Bear - ios app</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/4.jpg" class="img-responsive img-centered" alt="">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/64254212" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Cover - Bootstrap Template</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/5.jpg" class="img-responsive img-centered" alt="">
-                        <img src="img/portfolio/55.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Vintage Box</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/6.jpg" class="img-responsive img-centered" alt="">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/126783354" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>ProJector - Artweek Boston 2015</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/7.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Octopus - seafood restaurant logo</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/8.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Illustration for code-design magazine</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/9.gif" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Awesome Chairs</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/10.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>smart office</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/11.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="backgrid" data-dismiss="modal">
-                <i class="icon ion-grid size-48"></i>
-            </div>
-            <div class="close-modal" data-dismiss="modal">
-                <i class="icon ion-ios-close-empty size-96"></i>
-            </div>
-            <div class="container">
-                <h2>Travel App</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/portfolio/12.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
-                        <p>
-                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
-                            Date: <strong>April 2015</strong><br>
-                            Service: <strong>Web Development</strong>
-                        </p>
-                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- call to action -->
-<section id="action" class="background-gray">
+<section id="action">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center wow fadeIn">
@@ -700,15 +173,603 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <img src="img/features.jpg" class="img-features2 wow  fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s" alt="responsive">
+                    <img src="../img/responsive.png" class="img-features wow  fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s" alt="responsive">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- call to action parallax-->
-<section id="action-parallax7" class="parallax" data-speed="4" data-type="background">
+<!-- call to action parallax 2-->
+<section id="action-parallax2" class="parallax" data-speed="4" data-type="background">
+    <div class="overlay-dark"></div>
+    <div class="container wow fadeIn" data-wow-duration="4s">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <i class="icon icon-heading ion-social-html5 size-96"></i> &nbsp; &nbsp; <i class="icon icon-heading ion-social-css3-outline size-96"></i>
+                <br>
+                <h2>Designer/Coder Friendly</h2>
+                <p class="lead">
+                    The collaborative process of web development requires close integration of <strong>technology and design</strong> - two disciplines that inform one another.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- portfolio -->
+<section id="portfolio" class="head">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center wow fadeIn">
+                <h2 class="heading">Work</h2>
+                <h4>We believe our work speaks for itself. Browse our most recent projects below</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="portfolio wow fadeIn">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/1.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 2
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/2.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 3
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/3.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 4
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/4.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 5
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/5.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 6
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/6.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 7
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/7.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 8
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/8.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 9
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/9.gif" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal10" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 10
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/10.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal11" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 11
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/11.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 portfolio-item no-pad">
+                <a data-target="#portfolioModal12" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Project Title 12
+                        </div>
+                    </div>
+                    <img src="../img/portfolio/12.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modals -->
+<div class="work">
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Magic Bicycle - Artweek Boston 2015</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/1.jpg" class="img-responsive img-centered" alt="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://player.vimeo.com/video/64254212" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Laaamp - Berlin Biennale</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/2.jpg" class="img-responsive img-centered" alt="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://player.vimeo.com/video/33967829" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Smart bottle - NYC magazine</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/3.jpg" class="img-responsive img-centered" alt="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://player.vimeo.com/video/78937043" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Big Bear - ios app</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/4.jpg" class="img-responsive img-centered" alt="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://player.vimeo.com/video/64254212" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Cover - Bootstrap Template</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/5.jpg" class="img-responsive img-centered" alt="">
+                        <img src="../img/portfolio/55.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Vintage Box</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/6.jpg" class="img-responsive img-centered" alt="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://player.vimeo.com/video/126783354" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>We believe that the best user interfaces strive for simplicity. Fewer steps to take, fewer concepts to learn and a minified congnitive load. We are obsessed with beautiful digital experiences putting the user at the centre of everything we make.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>ProJector - Artweek Boston 2015</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/7.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Octopus - seafood restaurant logo</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/8.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Illustration for code-design magazine</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/9.gif" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Awesome Chairs</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/10.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>smart office</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/11.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="backgrid" data-dismiss="modal">
+                <i class="icon ion-grid size-48"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <i class="icon ion-ios-close-empty size-96"></i>
+            </div>
+            <div class="container">
+                <h2>Travel App</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../img/portfolio/12.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>We have created a new theme that will help designers, developers and companies create simple and beautiful business or personal website quickly and easily.</p>
+                        <p>
+                            Client: <strong><a href="http://forbetterweb.com">ForBetterWeb</a></strong><br>
+                            Date: <strong>April 2015</strong><br>
+                            Service: <strong>Web Development</strong>
+                        </p>
+                        <button type="button" class="border-button-black" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- pricing -->
+<section id="pricing">
+    <div class="container text-center wow fadeIn">
+        <i class="icon icon-heading ion-bag size-64 fa-opacity"></i><br>
+        <h2>PRICING <span class="thin">Choose your plan</span></h2>
+        <p class="lead">You can decide to upgrade to Gold or Platinum anytime throughout the month and get access to the features instantaneously. Or if you want to downgrade, we make it simple.</p>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 price wow fadeIn" data-wow-delay="0.2s">
+                <h2>COVER<span class="thin">FREE</span></h2>
+                <i class="icon ion-man fa-opacity size-48"></i>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="label label-danger"><strong>10 gb of space</strong></span></li>
+                    <li class="list-group-item">Unlimited Support</li>
+                    <li class="list-group-item">Access from anywhere</li>
+                    <li class="list-group-item">24/7 phone support</li>
+                    <li class="list-group-item">&nbsp;</li>
+                    <li class="list-group-item"><span class="number">free</span>
+                </ul>
+                <a href="#" class="btn border-button-black">GET STARTED</a>
+            </div>
+            <div class="featured col-md-3 col-sm-6 price wow fadeIn" data-wow-delay="0.3s">
+                <h2>COVER<span class="thin">SILVER</span></h2>
+                <i class="icon ion-ios-body size-48"></i>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="label label-danger"><strong>5 TB of space</strong></span></li>
+                    <li class="list-group-item">Unlimited Support</li>
+                    <li class="list-group-item">Access from anywhere</li>
+                    <li class="list-group-item">24/7 phone support</li>
+                    <li class="list-group-item">&nbsp;</li>
+                    <li class="list-group-item"><span class="number"><sup>$</sup>19</span> <sup>MONTH</sup>
+                </ul>
+                <a href="#" class="btn border-button-black">GET STARTED</a>
+            </div>
+            <div class="col-md-3 col-sm-6 price wow fadeIn" data-wow-delay="0.4s">
+                <h2>COVER<span class="thin">GOLD</span></h2>
+                <i class="icon ion-man fa-opacity size-48"></i> <i class="icon ion-man fa-opacity size-48"></i> <i class="icon ion-man fa-opacity size-48"></i>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="label label-danger"><strong>10 TB of space</strong></span></li>
+                    <li class="list-group-item">Unlimited Support</li>
+                    <li class="list-group-item">Access from anywhere</li>
+                    <li class="list-group-item">24/7 phone support</li>
+                    <li class="list-group-item">&nbsp;</li>
+                    <li class="list-group-item"><span class="number"><sup>$</sup>655</span> <sup>MONTH</sup>
+                </ul>
+                <a href="#" class="btn border-button-black">GET STARTED</a>
+            </div>
+            <div class="col-md-3 col-sm-6 price wow fadeIn" data-wow-delay="0.5s">
+                <h2>COVER<span class="thin">PLATINUM</span></h2>
+                <i class="icon ion-man fa-opacity size-48"></i> <i class="icon ion-man fa-opacity size-48"></i> <i class="icon ion-man fa-opacity size-48"></i> <i class="icon ion-man fa-opacity size-48"></i> <i class="icon ion-man fa-opacity size-48"></i>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="label label-danger"><strong>UNLIMITED</strong></span></li>
+                    <li class="list-group-item">Unlimited Support</li>
+                    <li class="list-group-item">Access from anywhere</li>
+                    <li class="list-group-item">24/7 phone support</li>
+                    <li class="list-group-item">100% uptime <a href="#top">guarantee</a></li>
+                    <li class="list-group-item"><span class="number"><sup>$</sup>955</span> <sup>MONTH</sup>
+                </ul>
+                <a href="#" class="btn border-button-black">GET IN TOUCH</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- call to action parallax 3-->
+<section id="action-parallax3" class="parallax" data-speed="4" data-type="background">
     <div class="overlay-dark"></div>
     <div class="container wow fadeIn">
         <div class="row">
@@ -728,7 +789,7 @@
 </section>
 
 <!-- testimonials -->
-<section id="testimonials" class="background-dark">
+<section id="testimonials">
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -743,21 +804,21 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="img/avatar1.jpg" alt="">
+                            <img src="../img/avatar1.jpg" alt="">
                             <div class="carousel-caption">
                                 <p class="lead">Thank you very much, the theme is great! Very concise and simple.
                                     <span class="carousel-name">Richard Kindall, Cover Customer</span></p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="img/avatar2.jpg" alt="">
+                            <img src="../img/avatar2.jpg" alt="">
                             <div class="carousel-caption">
                                 <p class="lead">Adorable minimalist theme! Should be working well as a canvas for any upcoming project.
                                     <span class="carousel-name">David Cohen, Cover Customer</span></p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="img/avatar3.jpg" alt="">
+                            <img src="../img/avatar3.jpg" alt="">
                             <div class="carousel-caption">
                                 <p class="lead">Amazing and SUPER easy to incorporate, looks like a great theme, full functionality indeed
                                     <span class="carousel-name">Jane Navarro, Cover Customer</span></p>
@@ -775,26 +836,26 @@
     <div class="container">
         <div class="row sponsor text-center wow fadeInLeft">
             <div class="col-md-2 gray col-md-offset-1">
-                <a href="/"><img src="img/logo1.png" alt=""></a>
+                <a href="/"><img src="../img/logo1.png" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href="/"><img src="img/logo2.png" alt=""></a>
+                <a href="/"><img src="../img/logo2.png" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href="/"><img src="img/logo3.png" alt=""></a>
+                <a href="/"><img src="../img/logo3.png" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href="/"><img src="img/logo4.png" alt=""></a>
+                <a href="/"><img src="../img/logo4.png" alt=""></a>
             </div>
             <div class="col-md-2">
-                <a href="/"><img src="img/logo5.png" alt=""></a>
+                <a href="/"><img src="../img/logo5.png" alt=""></a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- call to action parallax 2 -->
-<section id="action-parallax6" class="parallax" data-speed="4" data-type="background">
+<!-- call to action parallax -->
+<section id="action-parallax" class="parallax" data-speed="4" data-type="background">
     <div class="overlay-dark"></div>
     <div class="container text-center wow fadeIn">
         <h2>SOME FACTS</h2>
@@ -884,32 +945,24 @@ Custom Google Map Skin, Address and PNG map marker: js/map.js
 <div id="map"></div>
 
 <!-- footer -->
-<section id="footer" class="footer-portfolio wow fadeIn">
+<section id="footer" class="footer2 wow fadeIn">
     <div class="overlay-dark"></div>
     <div class="container-fluid text-center">
         <div class="row">
             <h2 class="wow flash" data-wow-iteration="999" data-wow-duration="2s"><a href="#top"><i class="icon ion-ios-arrow-up"></i></a>&nbsp;</h2>
-
-            <h2 class="wow fadeIn" data-wow-duration="6s" data-wow-delay="1s">
-                <a href="#top">
-                    American
-                    <i class="icon ion-ios-star"></i>
-                    <span class="thin">Software</span>
-                </a>
-            </h2>
-
+            <h2 class="wow fadeIn" data-wow-duration="8s" data-wow-delay="1s"><a href="#top"><i class="icon ion-social-youtube"></i> COVER<span class="thin">Video</span> 2</a></h2>
             <div class="col-md-4">
-                <h3><i class="icon ion-android-call"></i> (208) 874-9204</h3>
+                <h3><i class="icon ion-android-call"></i> (123) 456-7890</h3>
             </div>
             <div class="col-md-4">
-                <h3>Hayden Lake, ID 83835</h3>
+                <h3>2345 Some Ave, New York, NY 23458</h3>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline size-28">
-                    <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="icon ion-android-mail"></i></a></li>
+                    <li><a href="/"><i class="icon ion-social-twitter"></i></a></li>
+                    <li><a href="/"><i class="icon ion-social-facebook"></i></a></li>
+                    <li><a href="/"><i class="icon ion-social-linkedin"></i></a></li>
+                    <li><a href="/"><i class="icon ion-android-mail"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -918,35 +971,33 @@ Custom Google Map Skin, Address and PNG map marker: js/map.js
 </section>
 
 <!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <!-- Plugins for video background -->
-<script src="js/device.min.js"></script>
-<script src="js/jquery.mb.YTPlayer.js"></script>
+<script src="../js/device.min.js"></script>
+<script src="../js/jquery.mb.YTPlayer.js"></script>
 
 <!-- Plugins -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/form.js"></script>
-<script src="js/jquery.placeholder.min.js"></script>
-<script src="js/smoothscroll.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/jquery.countdown.min.js"></script>
+<script src="../js/jquery.placeholder.min.js"></script>
+<script src="../js/form.js"></script>
+
+<script src="../js/smoothscroll.js"></script>
 
 <!-- Google Map -->
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script>
-<script src="js/map.js"></script>
+<script src="../js/map.js"></script>
 
-<!-- Plugins for Horizontal Navbar -->
-<script src="js/horizontal-navbar.js"></script>
-<script src="js/jquery.easing.min.js"></script>
+<!-- Vertical Navbar -->
+<script src="../js/vertical-navbar.js"></script>
 
 <!-- Custom JavaScript -->
-<script src="js/custom.js"></script>
-<script src="js/cover.js"></script>
+<script src="../js/cover.js"></script>
 
 </body>
 </html>
