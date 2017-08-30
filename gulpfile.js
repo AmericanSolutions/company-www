@@ -9,23 +9,23 @@ gulp.task('serve', ['sass-dev'], function() {
     server: "./public"
   });
 
-  gulp.watch("public/assets/sass/**/*.scss", ['sass-dev']);
-  gulp.watch("public/assets/js/**/*.js").on('change', browserSync.reload);
+  gulp.watch("public/sass/**/*.scss", ['sass-dev']);
+  gulp.watch("public/js/**/*.js").on('change', browserSync.reload);
   gulp.watch("public/**/*.html").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS
 gulp.task('sass', function() {
-  return gulp.src("public/assets/sass/*.scss")
+  return gulp.src("public/sass/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("public/assets/css"))
+    .pipe(gulp.dest("public/css"))
 });
 // Compile sass into CSS & auto-inject into browsers
 // DEV ENV/USE ONLY
 gulp.task('sass-dev', function() {
-  return gulp.src("public/assets/sass/*.scss")
+  return gulp.src("public/sass/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("public/assets/css"))
+    .pipe(gulp.dest("public/css"))
     .pipe(browserSync.stream());
 });
 
