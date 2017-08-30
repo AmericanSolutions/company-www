@@ -141,6 +141,7 @@ $(document).ready(function () {
             if ( $.isFunction( settings.showFunction ) ){
                 if(
                     !$(this).hasClass('isShown')&&
+                    $('#scrollzipPoint') &&
                     ($(window).outerHeight()+$('#scrollzipPoint').offset().top-settings.showShift)>($(this).offset().top+((settings.wholeVisible)?$(this).outerHeight():0))&&
                     ($('#scrollzipPoint').offset().top+((settings.wholeVisible)?$(this).outerHeight():0))<($(this).outerHeight()+$(this).offset().top-settings.showShift)
                 ){
