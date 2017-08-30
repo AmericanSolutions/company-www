@@ -1,8 +1,8 @@
 // google analytics code for production
 
-/*  if (document.location.hostname === "americandevshop.com") { */
+// if (document.location.hostname === "americandevshop.com") { 
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+/*(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
@@ -10,28 +10,34 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-105525048-1', 'auto');
 ga('send', 'pageview');
 
-} 
+} */
 
-/* ga analytics code to test event trackers from local file
 
 ga('create', 'UA-105525048-1', 'auto');
 ga('set', 'checkProtocolTask', null); // Disable file protocol checking. 
 ga('set', 'checkStorageTask', null); // Disable cookie storage checking. 
 ga('set', 'historyImportTask', null); // Disable history checking (requires reading from cookies). 
-ga('send', 'pageview'); */
+ga('send', 'pageview'); 
 
-document.querySelector('.phone');
+const phoneClick = document.querySelector('.phone');
   
-  el.addEventListener('click', () => {		
-   	  ga('send', 'event', el.innerHTML, 'clicked', 'phone');
-   	  console.log(el.innerHTML);
+  phoneClick.addEventListener('click', () => {		
+   	  ga('send', 'event', 'phone number', 'clicked', 'phone');
+   	  console.log('phone number');
   })
 
-document.querySelectorAll('.email');
+const scheduleCall = document.querySelector('.schedule-call');
   
-  el.addEventListener('click', () => {		
-   	  ga('send', 'event', el.innerHTML, 'clicked', 'email');
-   	  console.log(el.innerHTML);
+  scheduleCall.addEventListener('click', () => {    
+      ga('send', 'event', el.innerHTML, 'clicked', 'schedule call');
+      console.log('schedule call');
+  })
+
+const email = document.querySelector('.email');
+  
+  email.addEventListener('click', () => {		
+   	  ga('send', 'event', 'email address', 'clicked', 'email');
+   	  console.log('email clicked');
   })
 
 document.querySelectorAll('.nav-item').forEach(el => {
